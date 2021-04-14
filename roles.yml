@@ -1,0 +1,16 @@
+---
+- name: Build-server configuration
+  hosts: build_host
+  become: yes
+
+  roles: 
+    - docker
+    - builder
+
+- name: Web-server configuration
+  hosts: prod_host
+  become: yes
+
+  roles:
+    - docker
+    - deployer
