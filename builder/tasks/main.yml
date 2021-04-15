@@ -20,7 +20,7 @@
   docker_image:
     name: bakirovaasia/caucuscalculator
     build:
-      path: {{ build_dir }} /multistage
+      path: "{{ build_dir }}/multistage"
     tag: latest
     push: yes
     source: build
