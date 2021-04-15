@@ -7,8 +7,8 @@
 
 - name: Ensure Github-repo is clone  
   git:
-    repo: {{ my_repo }}
-    dest: {{ build_dir }}
+    repo: "{{ my_repo }}"
+    dest: "{{ build_dir }}"
     clone: yes
 
 - name: Ensure in DockerHub is login
